@@ -1,71 +1,67 @@
 
 html
 	head
-		title Secuelas Perpetuas El juicio final, La matanza en El Frontón, Alan García, Primer gobierno de Alan García, Matanza en El Frontón, Penal El Frontón, Acusados de El Frontón, Marina de Guerra, Agustín Mantilla, Política | LaRepublica.pe
-		meta(charset="UTF-8")
-		meta(http-equiv="X-UA-Compatible",content="IE=edge")
-		meta(name="viewport",content="width=device-width, initial-scale=1.0, user-scalable=no")
-		meta(name="robots",content="index,follow")
-		meta(name="keywords",content="Alan García, Primer gobierno de Alan García, Matanza en El Frontón, Penal El Frontón, Acusados de El Frontón, Marina de Guerra, Agustín Mantilla, Política")
-		meta(name="description",content='El juicio final es un especial que identifica a los 35 ex marinos acusados de homicidio calificado contra 133 reos durante el debelamiento del motín en el penal El Frontón, ocurrido en junio de 1986 durante el gobierno de Alan García Pérez')
-		meta(property="og:description",content='El juicio final es un especial que identifica a los 35 ex marinos acusados de homicidio calificado contra 133 reos durante el debelamiento del motín en el penal El Frontón, ocurrido en junio de 1986 durante el gobierno de Alan García Pérez')
-		meta(property="fb:app_id",content="489210501129201")
-		meta(property="og:site_name",content="LaRepublica.pe")
-		meta(property="og:type",content="website")
-		meta(property="og:url",content="http://larepublica.pe/data/matanza-en-el-fronton/")
-		meta(property="og:title",content="El juicio final | La matanza en El Frontón | LaRepublica.pe")
-		meta(property="og:image",content="http://larepublica.pe/data/matanza-en-el-fronton/images/foto_portada.jpg")
-		meta(name="twitter:card",content="summary")
-		meta(name="twitter:site",content="@larepublica_pe")
-		meta(name="twitter:url",content="http://larepublica.pe/data/matanza-en-el-fronton")
-		meta(name="twitter:image",content="http://larepublica.pe/data/matanza-en-el-fronton/images/foto_portada.jpg")
-		meta(name="twitter:title",content="El juicio final | La matanza en El Frontón | LaRepublica.pe")
-		meta(name="twitter:description",content='El juicio final es un especial que identifica a los 35 ex marinos acusados de homicidio calificado contra 133 reos durante el debelamiento del motín en el penal El Frontón, ocurrido en junio de 1986 durante el gobierno de Alan García Pérez')
-		meta(name="twitter:width",content="150")
-		meta(name="twitter:height",content="120")
-		meta(itemprop="name",content="El juicio final | La matanza en El Frontón | LaRepublica.pe")
-		meta(itemprop="description",content='El juicio final es un especial que identifica a los 35 ex marinos acusados de homicidio calificado contra 133 reos durante el debelamiento del motín en el penal El Frontón, ocurrido en junio de 1986 durante el gobierno de Alan García Pérez')
-		meta(name="MobileOptimized",content="width")
-		meta(name="HandheldFriendly",content="true")
-		link(rel="canonical",href="http://larepublica.pe/data/matanza-en-el-fronton/")
-		link(rel="stylesheet",type="text/css",href="css/main.css")
-		link(rel="shortcut icon",href="http://larepublica.pe/favicon.ico")
-		script(src='http://code.jquery.com/jquery-2.2.4.min.js', integrity='sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=', crossorigin='anonymous')
-		script(src='http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js')
-	    		
+		include base/head.pug
 	body
 		
 		div.la-republica.v-center
 			a(href="http://larepublica.pe/",alt="la_republica")
-				img(class="img-responsive",src="images/logo_lr.png")
+				img(class="imgresponsive",src="images/logo_lr.png")
 		.menu
-			header.container
-				.logo
-					a(href='index.html')
-						img(src="images/logo-reponsive.png" width="180" alt="")
-				nav
-					a(href='shipibas.html') PUCALLPA
+			include base/menu.pug
 
-					a(href='https://codepen.io/soulrider911/full/dGuEn/') CUSCO
-				
-					a(href='investigaciones.html') COLECCIONES
-				
-				.redes
-					a(href='https://codepen.io/JGallardo/pen/lJoyk') redes
-
-		.caso1.container-fluid
+		.casos-shipibas.container-fluid
 			.container
-				h2 “El enfermero nos dijo: las ligamos en reemplazo de las que se han escapado” 
-				row
-					iframe(width="100%",height="500",src="https://www.youtube.com/embed/s4WYy18AJSs?rel=0&amp;showinfo=0",frameborder="0",allowfullscreen="")
-				.info
+				h2 “A mí me han llevado, ellos son los culpables” 
+				.row
 					.col-lg-8
-						p 
+						iframe(width="100%",height="50%",src="https://www.youtube.com/embed/s4WYy18AJSs?rel=0&amp;showinfo=0",frameborder="0",allowfullscreen="")
 					.col-lg-4
+						img(src="images/26805-639834-DINA PANGOS-SDARC-11497552.JPG" width="60%" alt="")
 
+						p 
+							|Agraviadas: Juliana Lomas Cauper 
+
+							|Grado de instrucción: primero de primaria 
+
+							|Fecha del hecho: 1997
+
+							|Modus Operandi:  Engaño, Violencia 
+
+							|Edad de la ligadura: 33
+
+							|Vivía en: Comunidad Pueblo Nuevo, distrito Iparía, provincia Coronel Portillo. 
+
+							|Responsables de la captación: Posta de Pueblo Nuevo 
+
+							|Responsables de la ligadura: Centro de Salud de Iparía. 
+
+							|Revise su historial clinico
+				.row.info
+					.col-lg-8
+						h4 LEALO EN 
+							span#botones
+								input(type="button",onclick="javascript:cambia_español();",value="Español")
+								input(type="button",onclick="javascript:cambia_shipibo();",value="Shpibo")
+						p#capa
+							|  Dina Pangoa Vásquez fue vilmente engañada por los enfermeros del puesto de salud Santa Rosa (distrito Masisea, provincia Coronel Portillo, región Pucallpa). La subieron a un bote para llevarla al Centro de Salud de Masisea con la promesa de brindarle un chequeo médico. Dina, su amiga shipiba Gloria, y dos señoras mestizas (no shipibas) navegaron a través del río Pashitea con dirección al encuentro con sus verdugos.
+							br
+							| Sacaron la lista de Masisea, y las empezaron a llamar una a una por su nombre para pasar a una sala.
+							
+					.col-lg-4
+						h2 Videos Relacionados
+						div.colum
+							a(href='#')
+								img(width="100%",src="images/shipiba-1z.jpg")
+								p “El enfermero nos dijo: las ligamos en reemplazo de las que se han escapado”
+						div.colum
+							a(href='#')
+								img(width="100%",src="images/shipiba-1z.jpg")
+								p “El enfermero nos dijo: las ligamos en reemplazo de las que se han escapado”
+
+								
 
 		footer
-			.sjdhsdha
+			include base/footer.pug
 
-		script(type='text/javascript', src='js/bootstrap.js')
-		script(type='text/javascript', src='js/main.js')
+		include base/script.pug

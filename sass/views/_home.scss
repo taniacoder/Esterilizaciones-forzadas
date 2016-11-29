@@ -7,6 +7,14 @@ body {
 }
 .bg-video {
 }
+/*botones redes*/
+.share-buttons-square {
+    margin-top: 1%;
+}
+.fb_iframe_widget_fluid {
+    display: inline-block;
+}
+/**/
 .bg-video div.contenedor {
 	position: relative;
     overflow: hidden;
@@ -62,7 +70,7 @@ body {
     text-shadow: 2px 2px 1px #000;
 }
 span.hashtag {
-	background-color: #7c2132;
+	background-color: #cc7a18;
     color: white;
     letter-spacing: 2px;
     font-size: 2.5rem;
@@ -70,64 +78,20 @@ span.hashtag {
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.33);
 }
 
-/*menu*/
-.menu {
-	background-color: #927F19;
-	display: flex;
-    	.container:before, 
-	.container:after {
-		content: initial;
-	}
+.intro {
+    p {
+        margin: 3% 0;
+    }
 }
-header {
-	background-color: #927F19;
-	padding:20px;
-   /*FLEX*/
-   	display: flex;
-   	justify-content:space-between;
-   	align-items:center;
-   	flex-direction:row; 
-   	flex-wrap:wrap;
-
-}
-
-header nav {
-	width: 50%;
-	/*FLEX*/
-   	display: flex;
-   	flex-wrap:wrap;
-   	align-items:center;
-
-}
-
-header nav a {
-	letter-spacing: 4px;
-    color: white;
-    font-weight: 600;
-    font-size: 1.5rem;
-	font-family: 'Cabin', sans-serif;
-	background-color: #927F19;
-	text-align:center;
-	text-decoration: none;
-	padding:10px;
-	   /*FLEX*/
-   	flex-grow:1;
-
-}
-
-.intro{
-	padding: 5% 0;
-}
-
 
 
 /*media*/
 @media screen and (max-width: 2218px) {
 	.bg-video video {
 
-    -webkit-transform: translate(-50%, -43%) scale(1.025);
-    -ms-transform: translate(-50%, -43%) scale(1.025);
-    transform: translate(-50%, -43%) scale(1.025);
+    -webkit-transform: translate(-50%, -31%) scale(1.025);
+    -ms-transform: translate(-50%, -31%) scale(1.025);
+    transform: translate(-50%, -31%) scale(1.025);
 	}
 
  }
@@ -170,6 +134,19 @@ header nav a {
 	}
 }
 @media screen and (max-width: 500px) {
+    .imgresponsive {
+        width: 80%;
+    }
+    .fa-5x {
+        font-size: 3em!important;
+    }
+    .bg-video video {
+
+    height: auto;
+    -webkit-transform: translate(-50%, -35%) scale(1.025);
+    -ms-transform: translate(-50%, -35%) scale(1.025);
+    transform: translate(-50%, -35%) scale(1.025);
+    }
 	header {
    	flex-direction:column; 
 	}
@@ -183,5 +160,11 @@ header nav a {
 	h1 img {
 		width: 70%;
 	}
+    .title p {
+    font-size: 1.5rem;
+    }
+    span.hashtag {
+    font-size: 1.6rem;
+    }
 
 }
