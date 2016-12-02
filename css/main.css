@@ -8,7 +8,8 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto+Slab';
 @import 'https://fonts.googleapis.com/css?family=Roboto';
 @import 'https://fonts.googleapis.com/css?family=Miriam+Libre';
-@import url("https://fonts.googleapis.com/css?family=Cabin");
+@import 'https://fonts.googleapis.com/css?family=Cabin';
+@import 'https://fonts.googleapis.com/css?family=Droid+Serif';
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -5828,6 +5829,7 @@ button.close {
 
 .la-republica {
   background-color: #013f6d;
+  background-color: #004158;
   padding: 0.5%; }
   .la-republica a {
     text-align: center; }
@@ -5973,6 +5975,7 @@ footer {
 /*menu*/
 .menu {
   background-color: #7e9e61;
+  background-color: #688e33;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6044,7 +6047,7 @@ header nav a {
   padding: 0; }
 
 body {
-  font-family: 'Cabin', sans-serif; }
+  font-family: "Roboto Slab"; }
 
 /*botones redes*/
 .share-buttons-square {
@@ -6115,10 +6118,15 @@ span.hashtag {
   letter-spacing: 2px;
   font-size: 2.5rem;
   text-align: center;
-  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.33); }
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.33);
+  font-family: 'Cabin', sans-serif; }
 
 .intro p {
   margin: 3% 0; }
+
+.fixed-top {
+  position: fixed;
+  top: 0; }
 
 /*media*/
 @media screen and (max-width: 2218px) {
@@ -6245,7 +6253,7 @@ span.hashtag {
    		padding-top: 5px;
 	}*/ }
   .cont p {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin: 0;
     text-shadow: 2px 2px 1px #000; }
 

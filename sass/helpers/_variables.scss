@@ -2,7 +2,8 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto+Slab';
 @import 'https://fonts.googleapis.com/css?family=Roboto';
 @import 'https://fonts.googleapis.com/css?family=Miriam+Libre';
-@import url('https://fonts.googleapis.com/css?family=Cabin');
+@import 'https://fonts.googleapis.com/css?family=Cabin';
+@import 'https://fonts.googleapis.com/css?family=Droid+Serif';
 //colors
 $larepublica: #c00101;
 $white: #FEFCFA;
@@ -14,4 +15,5 @@ $font_roboto_slab:'Roboto Slab';
 $font_roboto: 'Roboto';
 $font_miriam: 'Miriam Libre';
 $font_sans: sans-serif;
-$Cabin-sans: 'Cabin', sans-serif
+$Cabin: 'Cabin', sans-serif;
+$droid:'Droid Serif', serif;
