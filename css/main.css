@@ -6284,6 +6284,11 @@ span.hashtag {
 #botones input:hover {
   background-color: #a0616d; }
 
+/*fichas*/
+.fichat ul {
+  list-style: none;
+  font-size: 13px; }
+
 #capa {
   line-height: 24px;
   font-size: 1.7rem; }
@@ -6298,3 +6303,7 @@ span.hashtag {
   .colum p {
     font-size: 1.7rem;
     color: #7C2132; }
+
+@media screen and (max-width: 700px) {
+  .info {
+    display: none; } }

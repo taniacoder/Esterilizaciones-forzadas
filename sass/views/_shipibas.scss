@@ -82,6 +82,7 @@
 
 
  /*casos*/
+
 .casos-shipibas{
 	margin-bottom: 5%;
 	h2 {
@@ -98,6 +99,13 @@
 		}
 	input:hover{
 		 background-color: rgb(160, 97, 109);
+	}
+}
+/*fichas*/
+.fichat {
+	ul {
+		list-style: none;
+		font-size: 13px;
 	}
 }
 
@@ -118,3 +126,10 @@
 	}
 }
 
+
+
+@media screen and (max-width: 700px) {
+	.info {
+		display: none;
+	}
+}
