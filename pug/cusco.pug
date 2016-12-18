@@ -1,0 +1,161 @@
+
+html
+	head
+		include base/head.pug
+	    		
+	body
+		div#fb-root
+		script.
+			(function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.8";
+			  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		#main
+			div.la-republica.v-center
+				a(href="http://larepublica.pe/",alt="la_republica")
+					img(class="imgresponsive",src="images/logo_lr.png")
+			.menu
+				include base/menu.pug
+			section.container.intro-shipibas
+				.row
+					.col-lg-12.txt-intro-shipibas
+						p Numerosas víctimas de la comunidad shipiba de Ucayali fueron sometidas a las esterilizaciones sin que los enfermeros ni médicos, que no hablaban su lengua, les informaran del motivo de la operación. Las víctimas son de los distritos de Iparia y Masisea, a ocho horas de Pucallpa; de Padre Marquéz, a siete horas de la ciudad; y de Yarinacocha, distrito cercano a Pucallpa.
+
+
+			section.page.container-fluid.testimonios
+				.row.a
+					a.col-lg-6.col-md-6.col-xs-12.box(href='ninamamani.html')
+						img(src="images/ninamamani.jpg")
+						.hero-overlay2 
+							i(class="fa fa-play-circle-o fa-5x",aria-hidden="true")
+						.cont
+							<!--.btn.ver-video Ver video-->
+							<!-- i(class="icon-youtube-play" aria-hidden="true") -->
+
+							p Benedicta Nina Mamani 
+							p.info “No me han explicado de mi corte, no sabía porque tenía eso en mi cuerpo” 
+
+					a.col-lg-6.col-md-6.col-xs-12.box(href='damianahuallpayunca.html')
+						img(src="images/damianahuallpayunca.jpg")
+						.hero-overlay2 
+							i(class="fa fa-play-circle-o fa-5x",aria-hidden="true")
+						.cont
+							p Damiana Huallpayunca
+							p.info “A mi esposo lo obligaron a firmar para que me liguen”  
+				.row.a
+					a.col-lg-6.col-md-6.col-xs-12.box(href='ernestinamamani.html')
+						img(src="images/ernestinamamani.jpg")
+						.hero-overlay2 
+							i(class="fa fa-play-circle-o fa-5x",aria-hidden="true")
+						.cont
+							p Ernestina Mamani Quispe
+							p.info “Me dieron un papel para firmar, estaba llorando, no sé leer”
+
+					a.col-lg-6.col-md-6.col-xs-12.box(href='martinacamala.html')
+						img(src="images/martinacamala.jpg")
+						.hero-overlay2 
+							i(class="fa fa-play-circle-o fa-5x",aria-hidden="true")
+						.cont
+							p Martina Camala Quispe 
+							p.info “Me dijeron que si no me ligaban me meterían a la cárcel” 
+
+				.row.a
+					a.col-lg-6.col-md-6.col-xs-12.box(href='maximilianaquillhuaman.html')
+						img(src="images/maximilianaquillhuaman.jpg")
+						.hero-overlay2 
+							i(class="fa fa-play-circle-o fa-5x",aria-hidden="true")
+						.cont
+							p Maximiliana Quillahuaman Quispe  
+							p.info “No me hagan esto, tengo 25 años”
+ 
+					a.col-lg-6.col-md-6.col-xs-12.box(href='victoriaccoya.html')
+						img(src="images/victoriaccoya.jpg")
+						.hero-overlay2 
+							i(class="fa fa-play-circle-o fa-5x",aria-hidden="true")
+						.cont
+							p Victoria Ccoya Quispe
+							p.info “Me obligaron a ligarme porque el Gobierno ha ordenado no tener más de tres hijos” 
+
+
+		.album-fotos.mt-4
+			.row
+				.col-lg-offset-2.col-lg-8
+					h2  Más testimonios de mujeres shipibas esterilizadas
+					#next(alt='Next', title='Next')
+							.arrow-right
+					#prev(alt='Prev', title='Prev')
+							.arrow-left
+					#slider
+						
+							.slide
+								.img1
+									img(src="images/slider-1.jpg" width="100%")
+								.datos.slide-copy
+									h2 Slide One
+									p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae commodo sem. Integer eros nibh, molestie congue elementum quis, mattis nec tortor. Vivamus sed hendrerit sed vitae orci convallis.http://flex.madebymufffin.com/
+							.slide
+								.img1
+									img(src="images/slider-2.jpg" width="100%")
+								.datos.slide-copy
+									h2 Slide One
+									p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae commodo sem. Integer eros nibh, molestie congue elementum quis, mattis nec tortor. Vivamus sed hendrerit sed vitae orci convallis.http://flex.madebymufffin.com/
+							.slide
+								.img1
+									img(src="images/slider-1.jpg" width="100%")
+								.datos.slide-copy
+									h2 Slide One
+									p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae commodo sem. Integer eros nibh, molestie congue elementum quis, mattis nec tortor. Vivamus sed hendrerit sed vitae orci convallis.http://flex.madebymufffin.com/
+							.slide
+								.img1
+									img(src="images/slider-2.jpg" width="100%")
+								.datos.slide-copy
+									h2 Slide One
+									p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae commodo sem. Integer eros nibh, molestie congue elementum quis, mattis nec tortor. Vivamus sed hendrerit sed vitae orci convallis.http://flex.madebymufffin.com/
+
+		//* #container
+				h2  Más testimonios de mujeres shipibas esterilizadas
+					#next(alt='Next', title='Next')
+						.arrow-right
+					#prev(alt='Prev', title='Prev')
+						.arrow-left
+				#slider
+					.slide
+						.slide-copy
+							h2 Slide One
+							p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae commodo sem. Integer eros nibh, molestie congue elementum quis, mattis nec tortor. Vivamus sed hendrerit sed vitae orci convallis.
+						.img1
+							img(src="images/slider-1.jpg")
+							
+					.slide
+						.slide-copy
+							h2 Slide Two
+							p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae commodo sem. Integer eros nibh, molestie congue elementum quis, mattis nec tortor. Vivamus sed hendrerit sed vitae orci convallis.
+						.img2
+							img(src="images/slider-2.jpg")
+					.slide
+						.slide-copy
+							h2 Slide One
+							p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae commodo sem. Integer eros nibh, molestie congue elementum quis, mattis nec tortor. Vivamus sed hendrerit sed vitae orci convallis.
+						.img3
+							img(src="images/slider-1.jpg")
+					.slide
+						.slide-copy
+							h2 Slide Two
+							p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae commodo sem. Integer eros nibh, molestie congue elementum quis, mattis nec tortor. Vivamus sed hendrerit sed vitae orci convallis.
+						.img4
+							img(src="images/slider-2.jpg")
+					.slide
+						.slide-copy
+							h2 Slide Two
+							p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae commodo sem. Integer eros nibh, molestie congue elementum quis, mattis nec tortor. Vivamus sed hendrerit sed vitae orci convallis.
+						.img5
+							img(src="images/slider-1.jpg") -->
+
+
+		footer
+			include base/footer.pug
+
+		include base/script.pug
