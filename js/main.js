@@ -1,57 +1,28 @@
 
-$(document).ready(function(){
-	// options
-	var speed = 500; //transition speed - fade
-	var autoswitch = true; //auto slider options
-	var autoswitch_speed = 5000; //auto slider speed
-	
-	// add first initial active class
-	$(".slide").first().addClass("active");
-	
-	// hide all slides
-	$(".slide").hide;
-	
-	// show only active class slide
-	$(".active").show();
-	
-	// Next Event Handler
-	$('#next').on('click', nextSlide);// call function nextSlide
-	
-	// Prev Event Handler
-	$('#prev').on('click', prevSlide);// call function prevSlide
-	
-	// Auto Slider Handler
-	if(autoswitch == true){
-		setInterval(nextSlide,autoswitch_speed);// call function and value 4000
-	}
-	
-	// Switch to next slide
-	function nextSlide(){
-		$('.active').removeClass('active').addClass('oldActive');
-		if($('.oldActive').is(':last-child')){
-			$('.slide').first().addClass('active');
-		} else {
-			$('.oldActive').next().addClass('active');
-		}
-		$('.oldActive').removeClass('oldActive');
-		$('.slide').fadeOut(speed);
-		$('.active').fadeIn(speed);
-	}
-	
-	// Switch to prev slide
-	function prevSlide(){
-		$('.active').removeClass('active').addClass('oldActive');
-		if($('.oldActive').is(':first-child')){
-			$('.slide').last().addClass('active');
-		} else {
-			$('.oldActive').prev().addClass('active');
-		}
-		$('.oldActive').removeClass('oldActive');
-		$('.slide').fadeOut(speed);
-		$('.active').fadeIn(speed);
-	}
+//slider//
+jQuery(document).ready(function($) {
+ 
+        $('#myCarousel').carousel({
+                interval: 10000
+        });
+ 
+        $('#carousel-text').html($('#slide-content-0').html());
+ 
+        //Handles the carousel thumbnails
+       $('[id^=carousel-selector-]').click( function(){
+            var id = this.id.substr(this.id.lastIndexOf("-") + 1);
+            var id = parseInt(id);
+            $('#myCarousel').carousel(id);
+        });
+ 
+ 
+        // When the carousel slides, auto update the text
+        $('#myCarousel').on('slid.bs.carousel', function (e) {
+                 var id = $('.item.active').data('slide-number');
+                $('#carousel-text').html($('#slide-content-'+id).html());
+        });
 });
-
+//captura de imagenes
 
 
 ////botones traductor
@@ -91,7 +62,7 @@ function cambia_shipibo3(){
 }
 function cambia_español3(){
    var elemento = document.getElementById("capa-3"); 
-   elemento.innerHTML = "La señora Lucía Zumaeta López fue una víctima más de la estrategia que aplicaba el Hospital Amazónico, ubicado en la ciudad de Pucallpa, para esterilizar sin consentimiento. Los doctores aprovechaban el momento en que las mujeres daban a luz, fuera con cesárea o por parto natural, para ligarlas.<br>Lucía estaba embarazada de su última hija, Ruth Sánchez Zumaeta, y acudió junto con su esposo al hospital para dar a luz.<br>“Me hicieron la ligadura y la cesárea al mismo tiempo. A mí no me han avisado, yo no sabía, así ha sido”<br>Recién al día siguiente las enfermeras le contaron a su esposo la verdad. Él les reclamó, pero ellas respondieron  lo que suelen repetir en costa, sierra y selva; en postas de salud en zonas rurales o en modernos hospitales en la ciudad: “Nosotros estamos ordenados por el Gobierno, solo cumplimos órdenes”.<br>En su historia clínica, conseguida por La República, está indicado que el 22 de setiembre de 1998 los médicos escribieron: “OP CSTP + LTB”, es decir: Operación de Cesárea y al mismo tiempo Bloqueo Tubárico Bilateral, comúnmente conocido como ligadura de trompas.<br>Además, el documento señala que Lucía tenía Preeclampsia Severa, una grave condición médica en la cual la paciente no está en la condición de tomar decisiones en lo absoluto.<br>aqui va una imagen<br>Pero eso no es todo. La historia clínica muestra que la señora Zumaeta consintió una cesárea, pero no consigna en ninguna de sus 73 páginas que aceptará que la esterilizaran.<br>aqui va una imagen<br>Lucía Zumaeta López no denunció en su momento por desconocimiento, pero hoy que ha roto su silencio está dispuesta a hacerlo. Ella está esperando que vaya La Fiscalía a tomar su testimonio, y el del resto de cientos de sus compañeras shipibas.<br>AVISO URGENTE: ¡¡¡HASTA EL DÍA DE HOY LA FISCALÍA NO HA IDO A RECOGER LOS TESTIMONIOS DE LAS SEÑORAS SHIBIBAS, Y SIN EMBARGO YA ARCHIVÓ EL CASO !!!"; 
+   elemento.innerHTML = "La señora Lucía Zumaeta López fue una víctima más de la estrategia que aplicaba el Hospital Amazónico, ubicado en la ciudad de Pucallpa, para esterilizar sin consentimiento. Los doctores aprovechaban el momento en que las mujeres daban a luz, fuera con cesárea o por parto natural, para ligarlas.<br>Lucía estaba embarazada de su última hija, Ruth Sánchez Zumaeta, y acudió junto con su esposo al hospital para dar a luz.<br>“Me hicieron la ligadura y la cesárea al mismo tiempo. A mí no me han avisado, yo no sabía, así ha sido”<br>Recién al día siguiente las enfermeras le contaron a su esposo la verdad. Él les reclamó, pero ellas respondieron  lo que suelen repetir en costa, sierra y selva; en postas de salud en zonas rurales o en modernos hospitales en la ciudad: “Nosotros estamos ordenados por el Gobierno, solo cumplimos órdenes”.<br>En su historia clínica, conseguida por La República, está indicado que el 22 de setiembre de 1998 los médicos escribieron: “OP CSTP + LTB”, es decir: Operación de Cesárea y al mismo tiempo Bloqueo Tubárico Bilateral, comúnmente conocido como ligadura de trompas.<br>Además, el documento señala que Lucía tenía Preeclampsia Severa, una grave condición médica en la cual la paciente no está en la condición de tomar decisiones en lo absoluto.<br> <img src='images/doc1.jpg' width='100%'/> <br>Pero eso no es todo. La historia clínica muestra que la señora Zumaeta consintió una cesárea, pero no consigna en ninguna de sus 73 páginas que aceptará que la esterilizaran.<br> <img src='images/doc2.jpg' width='100%'/> <br>Lucía Zumaeta López no denunció en su momento por desconocimiento, pero hoy que ha roto su silencio está dispuesta a hacerlo. Ella está esperando que vaya La Fiscalía a tomar su testimonio, y el del resto de cientos de sus compañeras shipibas.<br>AVISO URGENTE: ¡¡¡HASTA EL DÍA DE HOY LA FISCALÍA NO HA IDO A RECOGER LOS TESTIMONIOS DE LAS SEÑORAS SHIBIBAS, Y SIN EMBARGO YA ARCHIVÓ EL CASO !!!"; 
 }
 
 

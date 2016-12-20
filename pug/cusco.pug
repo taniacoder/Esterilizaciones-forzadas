@@ -22,7 +22,7 @@ html
 			section.container.intro-shipibas
 				.row
 					.col-lg-12.txt-intro-shipibas
-						p Conversamos con numerosas mujeres cusqueñas esterilizadas contra su voluntad en el distrito de Huancarani, a dos horas de Cusco; en Colquepata, a cinco horas de la ciudad; y en el valle de Mahuaypampa, ubicado en la hermosa provincia de Urubamba. Las señoras fueron ligadas tanto en las postas de salud de sus distritos como en los más grandes hospitales de la ciudad. 
+						p Mujeres cusqueñas fueron esterilizadas en las postas de sus comunidades así como en los más grandes hospitales de la ciudad. Varias fueron forzadas a firmar una autorización para ligarse bajo amenazas o engaños. Las víctimas son de los distritos de Huancarani, a dos horas de Cusco; de Colquepata, a cinco horas de la ciudad; y de Mahuaypampa, ubicado en el hermoso valle de Urubamba.
 
 
 			section.page.container-fluid.testimonios
@@ -80,79 +80,199 @@ html
 							p.info “Me obligaron a ligarme porque el Gobierno ha ordenado no tener más de tres hijos” 
 
 
-		.album-fotos.mt-4
-			.row
-				.col-lg-offset-2.col-lg-8
-					h2  Más testimonios de mujeres shipibas esterilizadas
-					#next(alt='Next', title='Next')
-							.arrow-right
-					#prev(alt='Prev', title='Prev')
-							.arrow-left
-					#slider
-						
-							.slide
-								.img1
-									img(src="images/slider-1.jpg" width="100%")
-								.datos.slide-copy
-									h2 Slide One
-									p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae commodo sem. Integer eros nibh, molestie congue elementum quis, mattis nec tortor. Vivamus sed hendrerit sed vitae orci convallis.http://flex.madebymufffin.com/
-							.slide
-								.img1
-									img(src="images/slider-2.jpg" width="100%")
-								.datos.slide-copy
-									h2 Slide One
-									p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae commodo sem. Integer eros nibh, molestie congue elementum quis, mattis nec tortor. Vivamus sed hendrerit sed vitae orci convallis.http://flex.madebymufffin.com/
-							.slide
-								.img1
-									img(src="images/slider-1.jpg" width="100%")
-								.datos.slide-copy
-									h2 Slide One
-									p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae commodo sem. Integer eros nibh, molestie congue elementum quis, mattis nec tortor. Vivamus sed hendrerit sed vitae orci convallis.http://flex.madebymufffin.com/
-							.slide
-								.img1
-									img(src="images/slider-2.jpg" width="100%")
-								.datos.slide-copy
-									h2 Slide One
-									p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae commodo sem. Integer eros nibh, molestie congue elementum quis, mattis nec tortor. Vivamus sed hendrerit sed vitae orci convallis.http://flex.madebymufffin.com/
+		.container.album-fotos.mt-4
+			#main_area
+				// Slider
+				.row
+					#slider.col-xs-12
+						// Top part of the slider
+						.row
+							#carousel-bounding-box.col-sm-8
+								#myCarousel.carousel.slide
+									// Carousel items
+									.carousel-inner
+										.active.item(data-slide-number='0')
+											img(src='images/album-cusco/margarita-puma.jpg')
+										.item(data-slide-number='1')
+											img(src='images/album-cusco/lorenza-ylla.jpg')
+										.item(data-slide-number='2')
+											img(src='images/album-cusco/susana-quispe.jpg')
+										.item(data-slide-number='3')
+											img(src='images/album-cusco/florentina-thupa.jpg')
+										.item(data-slide-number='4')
+											img(src='images/album-cusco/nelly-quispe.jpg')
+										.item(data-slide-number='5')
+											img(src='images/album-cusco/valentina-huisa.jpg')
+										.item(data-slide-number='6')
+											img(src='images/album-cusco/felipa-mamani.jpg')
+										.item(data-slide-number='7')
+											img(src='images/album-cusco/juliana-yapo.jpg')
+										.item(data-slide-number='8')
+											img(src='images/album-cusco/nicasia-quispe.jpg')
+										.item(data-slide-number='9')
+											img(src='images/album-cusco/benita-huaranca.jpg')
+										.item(data-slide-number='10')
+											img(src='images/album-cusco/rudeisnda-quillahuaman.jpg')
+										.item(data-slide-number='11')
+											img(src='images/album-cusco/luisa-mejia.jpg')
+										.item(data-slide-number='12')
+											img(src='images/album-cusco/pascuala-taboada.jpg')
+										.item(data-slide-number='13')
+											img(src='images/album-cusco/natividad-cueva.jpg')
+										.item(data-slide-number='14')
+											img(src='images/album-cusco/serafina-ylla.jpg')
 
-		//* #container
-				h2  Más testimonios de mujeres shipibas esterilizadas
-					#next(alt='Next', title='Next')
-						.arrow-right
-					#prev(alt='Prev', title='Prev')
-						.arrow-left
-				#slider
-					.slide
-						.slide-copy
-							h2 Slide One
-							p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae commodo sem. Integer eros nibh, molestie congue elementum quis, mattis nec tortor. Vivamus sed hendrerit sed vitae orci convallis.
-						.img1
-							img(src="images/slider-1.jpg")
-							
-					.slide
-						.slide-copy
-							h2 Slide Two
-							p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae commodo sem. Integer eros nibh, molestie congue elementum quis, mattis nec tortor. Vivamus sed hendrerit sed vitae orci convallis.
-						.img2
-							img(src="images/slider-2.jpg")
-					.slide
-						.slide-copy
-							h2 Slide One
-							p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae commodo sem. Integer eros nibh, molestie congue elementum quis, mattis nec tortor. Vivamus sed hendrerit sed vitae orci convallis.
-						.img3
-							img(src="images/slider-1.jpg")
-					.slide
-						.slide-copy
-							h2 Slide Two
-							p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae commodo sem. Integer eros nibh, molestie congue elementum quis, mattis nec tortor. Vivamus sed hendrerit sed vitae orci convallis.
-						.img4
-							img(src="images/slider-2.jpg")
-					.slide
-						.slide-copy
-							h2 Slide Two
-							p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae commodo sem. Integer eros nibh, molestie congue elementum quis, mattis nec tortor. Vivamus sed hendrerit sed vitae orci convallis.
-						.img5
-							img(src="images/slider-1.jpg") -->
+									// Carousel nav
+									a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
+										span.glyphicon.glyphicon-chevron-left
+									a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
+										span.glyphicon.glyphicon-chevron-right
+							#carousel-text.col-sm-4
+							#slide-content(style='display: none;')
+								#slide-content-0
+									h2 Margarita Puma Tupa
+									p Año 1996. 42 años. Grado de instrucción: iletrado/ sin instrucción. Esterilizada con engaños en el Centro de Salud de Paucartambo (Distrito Paucartambo, provincia Paucartambo- Cusco)
+									p.sub-text
+										|“En noviembre de 1996 fui a la posta de salud de Colquepata porque me dolía la barriga, y allí ya no me soltaron. Los enfermeros Hernán y Alicia me dijeron que en el Centro de Salud de Paucartambo me curarían mi dolor…Me llevaron en ambulancia a Paucartambo, me encerraron, y me ligaron”. 
+										a(href='#') Read more
+								#slide-content-1
+									h2 Lorenza illa Yanqui
+									p Año 1996. 33 años. Grado de instrucción: iletrado/sin instrucción. Esterilizada con amenazas en el Centro de Salud de Paucartambo (Distrito Paucartambo, provincia Paucartambo - Cusco)
+									p.sub-text
+										| “Los de la posta de Colquepata, Alicia y Hernán, me habían traído a ligarme diciendo que si no quería mi esposo iría a la cárcel…Me llevaron al Centro de Salud de Paucartambo, sino me ligaron en la posta de Colquepata fue porque en ese momento no había programación de ligaduras en la posta”.
+										a(href='#') Read more
+								#slide-content-2
+									h2 Susana Quispe Huamán
+									p Año 1996. 34 años. Grado de instrucción: iletrado/sin instrucción. Esterilizada con violencia y amenazas en la posta de Colquepata (Distrito Colquepata, provincia Paucartambo - Cusco)
+									p.sub-text
+										| “Fueron a mi casa los enfermeros Alicia y Hernán, me llevaron a la fuerza…En la posta yo les dije a los doctores que al menos me sacaran la T de cobre de mi vagina...A siete ligaron junto conmigo. Pensé que la señora Florentina Thupa se había muerto, no reaccionaba luego de la ligadura”.
+										a(href='#') Read more
+								#slide-content-3
+									h2 Florentina Thupa Suna
+									p Año 1996. 32 años. Grado de instrucción: cuarto de primaria. Esterilizada con amenazas en la posta de Colquepata (Distrito Colquepata, provincia Paucartambo - Cusco)
+									p.sub-text
+										|“En la posta me obligaron a ligarme, la enfermera Alicia me dijo que sino ese mismo día íbamos presos yo o mi esposo…Yo he demorado bastante en reaccionar, me ligaron a las nueve y desperté a las cinco. Varias señoras que las operaron ese día conmigo pensaron que me había muerto”. 
+										a(href='#') Read more
+								#slide-content-4
+									h2 Nelly Quispe Huisa 
+									p Año 1996. 26 años. Grado de instrucción: primaria completa. Esterilizada con engaños en la posta de Colquepata (Distrito Colquepata, provincia Paucartambo - Cusco)
+									p.sub-text
+										| “Las enfermeras Alicia y Patricia me dijeron que iban a sacarme la T de cobre de mi vagina para que no me haga daño, pero los doctores me han ligado… ¿Dónde estarán esas enfermeras ahora?, se acabó la campaña y desaparecieron”. 
+										a(href='#') Read more
+								#slide-content-5
+									h2 Valentina Huisa Condori
+									p Año 1996. 32 años. Grado de instrucción: iletrado/ sin instrucción. Esterilizada con engaños y violencia en la posta de Colquepata (Distrito Colquepata, provincia Paucartambo - Cusco)
+									p.sub-text
+										| “Una enfermera me dice que firme un papel, yo no entendía el papel, pensé que era para atender a mi bebé de siete meses que lo había llevado para su control. Luego la enfermera sale y me dice que si no quiero ligarme iría a la cárcel… Traté de escapar, pero no me dejaron”. 
+										a(href='#') Read more
+								#slide-content-6
+									h2 Felipa Mamani Soria 
+									p Año 1997. 39 años. Grado de instrucción: segundo de secundaria. Esterilizada con amenazas y violencia en la posta de Colquepata (Distrito Colquepata, provincia Paucartambo - Cusco)
+									p.sub-text
+										|“Las enfermeras nos decían que Fujimori, el presidente, ha mandado a hacernos ligar, y que si no lo hacíamos nuestros hijos no serán reconocidos y pagaríamos cien soles por cada hijo que tengamos…En la posta queríamos escaparnos pero la policía nos atrapó”. 
+										a(href='#') Read more
+								#slide-content-7
+									h2 Juliana Yapo Flores 
+									p Año 1996. 31 años. Grado de instrucción: iletrado/sin instrucción. Esterilizada con amenazas y violencia en la posta de Colquepata. (Distrito Colquepata, provincia Paucartambo - Cusco)
+									p.sub-text
+										|“A mi comunidad en Sipascancha han ido los enfermeros con la policía y me subieron a la ambulancia...Algunas señoras se escapaban hasta sin ropa, solo con la bata que nos daban. Otras nos quedábamos por miedo. Recuerdo a la enfermera Alicia, era gordita, alta, pelo corto, mal nos trataba”. 
+										a(href='#') Read more
+								#slide-content-8
+									h2 Nicasia Quispe Quispe 
+									p Año 1996. 28 años. Grado de Instrucción: iletrado/sin instrucción. Esterilizada con hostigamiento y violencia en el Hospital Regional del Cusco (Ciudad de Cusco - Cusco)
+									p.sub-text
+										|“Me insistían para que me ligue, me hicieron firmar un papel que no entendía. Me mandaron de la posta de Colquepata al Hospital Regional de Cusco con el carro de la municipalidad, éramos 3…Me amarraron manos y pies en la camilla con correa, se oían los gritos de mujeres”.   
+										a(href='#') Read more
+								#slide-content-9
+									h2 Benita Huarancca Quispe 
+									p Año 1996. 31 años. Grado de instrucción: iletrado/sin instrucción. Esterilizada con hostigamiento y a la fuerza en el Hospital Regional del Cusco. (Ciudad de Cusco- Cusco) 
+									p.sub-text
+										|“Me llevaron a la fuerza al Centro de Salud de Huancarani y de ahí a al Hospital Regional de Cusco. Yo quería escaparme, pero era primera vez que estaba en un hospital, me perdía…Luego de ligarme me dieron un papel y me dijeron que con eso fuera al Centro de Salud si me sentía mal. Yo no sé leer”.
+										a(href='#') Read more
+								#slide-content-10
+									h2 Rudesinda Quillahuamán Almanza
+									p Año 1996. 24 años. Grado de instrucción: iletrado/sin instrucción. Esterilizada con amenazas y violencia en el Centro de Salud de Anta. (Distrito Anta, provincia Anta - Cusco)
+									p.sub-text
+										|“Yo me cuidaba de forma natural, nosotros queríamos así… Me asusté cuando dijeron que nos iban a llevar la policía. A mi esposo lo han hecho firmar un papel con esas amenazas…Como si fuera un trapo me han botado encima de la cama, me amarraron las manos”. 
+										a(href='#') Read more
+								#slide-content-11
+									h2 Luisa Mejía Victoria 
+									p Año 1995. 36 años. Grado de instrucción: iletrado/ sin instrucción. Esterilizada con engaños en el Centro de Salud de Anta. (Distrito Anta, provincia Anta - Cusco) 
+									p.sub-text
+										|“Me dijeron que firmara un papel, yo no sé leer, yo no sé escribir, mi nombre no más sé firmar pero mal, les decía. Es para que te revisen tu T de cobre, tienes que firmar…Yo no tengo ninguna educación, a cinco señoras de Chinchaypujio que no sabemos leer ni escribir ese día nos han hecho así”. 
+										a(href='#') Read more
+								#slide-content-12
+									h2 Pascuala Taboada Sotelo  
+									p 1997. 36 años. Grado de instrucción: primaria completa. Esterilizada con engaños y amenazas la posta de Mollepata. (Distrito Mollepata, provincia Anta - Cusco) 
+									p.sub-text
+										|“A mí y a la vecina Jacinta Cáceres nos dijeron que era último día en la posta para recoger sémola. Los doctores no eran de la posta, el que me ligó era un blancon. Eran tres medios gringos. Los enfermeros decían que habían llegado buenos doctores para nosotras, que no entendían por qué nos quejábamos”.
+										a(href='#') Read more
+								#slide-content-13
+									h2 Natividad Cueva Núñez  
+									p Año 1997. 33 años. Nivel de instrucción: cuarto de primaria. Esterilizada con hostigamiento y a la fuerza en el MINSA de Urubamba. (Distrito Urubamba, provincia Urubamba - Cusco)
+									p.sub-text
+										|“La enfermera Blanca de la posta de Maras ya había ido como cuatro veces a mi casa a exigirme que me ligara, la última vez fue con ambulancia… A la fuerza me ha llevado a la posta de Maras, luego al MINSA de Urubamba. Siempre les dije que no, que no”. 
+										a(href='#') Read more
+								#slide-content-14
+									h2 Serafina Ylla Quispe  
+									p AAño 1997. 34 años. Grado de instrucción: secundaria completa. Esterilizada con engaños y con violencia en el Hospital Antonio Lorena (Ciudad de Cusco - Cusco) 
+									p.sub-text
+										|“Por miedo a que me liguen preferí dar a luz en un hospital del Cusco, porque pensé que en la ciudad no me iban a hacer ese atropello. Pero ha sido peor. He dado a luz en el Hospital Antonio Lorena del Cusco el día de la madre. Ese mismo día sin mi voluntad, amarrándome, me han ligado”. 
+										a(href='#') Read more											
+				// /Slider
+				#slider-thumbs.hidden-xs
+					// Bottom switcher of slider
+					.row
+						ul.hide-bullets
+							li.col-sm-2
+								a#carousel-selector-0.thumbnail
+									img(src='images/album-cusco/margarita-puma.jpg')
+							li.col-sm-2
+								a#carousel-selector-1.thumbnail
+									img(src='images/album-cusco/lorenza-ylla.jpg')
+							li.col-sm-2
+								a#carousel-selector-2.thumbnail
+									img(src='images/album-cusco/susana-quispe.jpg')
+							li.col-sm-2
+								a#carousel-selector-3.thumbnail
+									img(src='images/album-cusco/florentina-thupa.jpg')
+							li.col-sm-2
+								a#carousel-selector-4.thumbnail
+									img(src='images/album-cusco/nelly-quispe.jpg')
+							li.col-sm-2
+								a#carousel-selector-5.thumbnail
+									img(src='images/album-cusco/valentina-huisa.jpg')
+					.row
+						ul.hide-bullets
+							li.col-sm-2
+								a#carousel-selector-6.thumbnail
+									img(src='images/album-cusco/felipa-mamani.jpg')
+							li.col-sm-2
+								a#carousel-selector-7.thumbnail
+									img(src='images/album-cusco/juliana-yapo.jpg')
+							li.col-sm-2
+								a#carousel-selector-8.thumbnail
+									img(src='images/album-cusco/nicasia-quispe.jpg')
+							li.col-sm-2
+								a#carousel-selector-9.thumbnail
+									img(src='images/album-cusco/benita-huaranca.jpg')
+							li.col-sm-2
+								a#carousel-selector-10.thumbnail
+									img(src='images/album-cusco/rudeisnda-quillahuaman.jpg')
+							li.col-sm-2
+								a#carousel-selector-11.thumbnail
+									img(src='images/album-cusco/luisa-mejia.jpg')
+					.row
+						ul.hide-bullets
+							li.col-sm-2
+								a#carousel-selector-12.thumbnail
+									img(src='images/album-cusco/pascuala-taboada.jpg')
+							li.col-sm-2
+								a#carousel-selector-13.thumbnail
+									img(src='images/album-cusco/natividad-cueva.jpg')
+							li.col-sm-2
+								a#carousel-selector-14.thumbnail
+									img(src='images/album-cusco/serafina-ylla.jpg')
 
 
 		footer
