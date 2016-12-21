@@ -52,7 +52,7 @@ body {
  }
 .content-logo {
     display:flex;
-    padding: 5%;
+    padding: 3%;
 }
 .title {
     /*position: absolute;*/
@@ -90,6 +90,17 @@ span.hashtag {
 .fixed-top{
     position: fixed;
     top: 0;
+}
+
+.tw-meli {
+    text-shadow: 2px 2px 1px #000;
+    text-align: right;
+    margin-bottom: 4%;
+    color: #fff;
+    a {
+        color: #fff;
+    }
+
 }
 
 /*media*/

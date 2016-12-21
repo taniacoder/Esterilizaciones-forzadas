@@ -18,9 +18,9 @@
 
 footer {
 	padding: 2% 0;
-	background:$guinda;
+	background:#013f6d;
 	color: white;
-	text-align: center;
+	text-align: left;
 	.img-foot-lr {
 		display: block;
     	margin: auto;
@@ -31,4 +31,14 @@ footer {
 		border-top: 1px solid #eee;
 	}
 }
-
+.logofooter {
+    text-align: center;
+}
+.creditos {
+	h4 {
+		font-size: 14px;
+	}
+	p {
+		font-size: 12px;
+	}
+}
