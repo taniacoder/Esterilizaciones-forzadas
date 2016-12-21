@@ -5863,6 +5863,12 @@ footer {
 .creditos p {
   font-size: 12px; }
 
+.nom-meli h4 {
+  font-size: 16px; }
+
+.nom-meli p {
+  font-size: 15px; }
+
 /*menu*/
 .menu {
   background-color: #7e9e61;
@@ -5870,7 +5876,7 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0.7%; }
+  padding: 0.5%; }
   .menu .container:before,
   .menu .container:after {
     content: initial; }
@@ -6095,7 +6101,7 @@ span.hashtag {
 .txt-intro-shipibas {
   text-align: center;
   padding: 1%;
-  font-size: 17px; }
+  font-size: 15px; }
 
 .row.a {
   background-color: #7C2132;
