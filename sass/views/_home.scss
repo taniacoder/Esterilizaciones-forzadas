@@ -52,7 +52,7 @@ body {
  }
 .content-logo {
     display:flex;
-    padding: 3%;
+    padding: 1%;
 }
 .title {
     /*position: absolute;*/
@@ -85,6 +85,7 @@ span.hashtag {
 .intro {
     p {
         margin: 3% 0;
+       font-size: 16px; 
     }
 }
 .fixed-top{
@@ -95,7 +96,7 @@ span.hashtag {
 .tw-meli {
     text-shadow: 2px 2px 1px #000;
     text-align: right;
-    margin-bottom: 4%;
+    margin-bottom: 1%;
     color: #fff;
     a {
         color: #fff;

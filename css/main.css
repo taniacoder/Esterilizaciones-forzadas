@@ -5843,7 +5843,7 @@ button.close {
 /*footer*/
 footer {
   padding: 2% 0;
-  background: #013f6d;
+  background: #004158;
   color: white;
   text-align: left; }
   footer .img-foot-lr {
@@ -5862,12 +5862,6 @@ footer {
 
 .creditos p {
   font-size: 12px; }
-
-.nom-meli h4 {
-  font-size: 16px; }
-
-.nom-meli p {
-  font-size: 15px; }
 
 /*menu*/
 .menu {
@@ -5990,7 +5984,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 3%; }
+  padding: 1%; }
 
 .title {
   /*position: absolute;*/
@@ -6019,7 +6013,8 @@ span.hashtag {
   font-family: 'Cabin', sans-serif; }
 
 .intro p {
-  margin: 3% 0; }
+  margin: 3% 0;
+  font-size: 16px; }
 
 .fixed-top {
   position: fixed;
@@ -6028,7 +6023,7 @@ span.hashtag {
 .tw-meli {
   text-shadow: 2px 2px 1px #000;
   text-align: right;
-  margin-bottom: 4%;
+  margin-bottom: 1%;
   color: #fff; }
   .tw-meli a {
     color: #fff; }
