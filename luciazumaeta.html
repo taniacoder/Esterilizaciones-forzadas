@@ -40,6 +40,17 @@
     <!--script(src='http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js')-->
   </head>
   <body>
+    <div id="fb-root"></div>
+    <script>
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.8";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+      			
+    </script>
     <div class="la-republica v-center"><a href="http://larepublica.pe/" alt="la_republica"><img class="imgresponsive" src="images/logo_lr.png"/></a></div>
     <div class="menu">
       <header class="container">
@@ -147,13 +158,13 @@
           </div>
           <div class="col-lg-2 col-md-2 col-xs-12 creditos">
             <h4>Traducciones: </h4><br/>
+            <h4>Shipibo a Español:</h4>
+            <p>Wilma Maynas</p>
+            <p>Esdras Silvano </p><br/>
             <h4>Quechua a Español:</h4>
             <p>Virgilio Grajeda</p>
             <p>Libia Pinares</p>
-            <p>Ruth Zúñiga</p><br/>
-            <h4>Shipibo a Español:</h4>
-            <p>Wilma Maynas</p>
-            <p>Esdras Silvano </p>
+            <p>Ruth Zúñiga</p>
           </div>
         </div>
       </div>
